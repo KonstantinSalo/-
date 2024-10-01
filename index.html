@@ -17,7 +17,7 @@
         <img src="img/logo.png" class="logo-link__img" alt="Логотип сайта">
       </a>
       <nav class="header__nav nav">
-        <ul class="nav__list">
+        <ul class="nav__list list-reset">
           <li class="nav__item">
             <a class="nav__link" href="#">
               О нас
@@ -86,7 +86,7 @@
           экспериментов.
         </p>
         <div class="about__grid-container">
-          <div class="about__left">
+          <div class="about__left-wrap">
             <div class="about__left-content">
               <p class="about__left-text">
                 Принимая во внимание показатели успешности, перспективное планирование способствует подготовке
@@ -97,7 +97,8 @@
               </button>
             </div>
           </div>
-          <div class="about__right">
+          <!-- TODO: бэкграунды через псевдоклассы -->
+          <div class="about__right-wrap">
             <div class="about__right-item">
               <h4 class="about__subtitle subtitle">
                 Консультация с широким активом
@@ -126,7 +127,7 @@
         <h2 class="stages__title section-title">
           Этапы
         </h2>
-        <div class="stages__left">
+        <div class="stages__left-wrap">
           <h4 class="stages__subtitle subtitle subtitle_stages">
             Проводим консультацию
           </h4>
@@ -140,6 +141,15 @@
             вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины
             в целом, однако конкретные выводы, разумеется, призваны к ответу.
           </p>
+          <button class="stages__btn btn">
+            Подробнее
+          </button>
+          <button class="stages__btn btn stages__btn_transparent">
+            Договор
+          </button>
+        </div>
+        <div class="stages__right-wrap" style="background-image: none;">
+          
         </div>
       </div>
     </section>
