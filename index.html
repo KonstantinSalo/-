@@ -146,7 +146,7 @@
             Договор
           </button>
         </div>
-        <div class="stages__right-wrap" style="background-image: none;"></div>
+        <div class="stages__right-wrap"></div>
       </div>
     </section>
 
@@ -157,7 +157,7 @@
         </h2>
         <div class="faq__list">
           <div class="faq__item">
-            <h4 class="subtitle">
+            <h4 class="faq__subtitle subtitle">
               Из чего формируется конечная стоимость проекта?
             </h4>
             <p class="faq__answer">
@@ -165,7 +165,7 @@
             </p>
           </div>
           <div class="faq__item">
-            <h4 class="subtitle">
+            <h4 class="faq__subtitle subtitle">
               У меня есть свой проект. Можно ли его реализовать?
             </h4>
             <p class="faq__answer">
@@ -174,7 +174,7 @@
             </p>
           </div>
           <div class="faq__item">
-            <h4 class="subtitle">
+            <h4 class="faq__subtitle subtitle">
               Я выбираю между разными компаниями. Почему вы?
             </h4>
             <p class="faq__answer">
@@ -260,13 +260,15 @@
             <input type="text" class="form__input" name="name" placeholder="Фамилия, имя и отчество*" required>
             <input type="email" class="form__input" name="email" placeholder="Email*" required>
             <textarea class="form__textarea" name="message" placeholder="Сообщение"></textarea>
-            <button class="form__btn btn" type="submit">
-              Отправить данные
-            </button>
-            <label class="form__checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="accept" value="Согласен на обработку данных">
-              <span class="form__checkbox-text">Согласен на обработку данных</span>
-            </label>
+            <div class="form__submit-wrap form__submit-wrap_footer">
+              <button class="form__btn btn" type="submit">
+                Отправить данные
+              </button>
+              <label class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="agreed" value="agree" required>
+                <span class="form__checkbox-text">Согласен на обработку данных</span>
+              </label>
+            </div>
           </fieldset>
         </form>
       </div>
